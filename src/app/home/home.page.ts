@@ -17,7 +17,7 @@ import {
 } from '@ionic/angular/standalone';
 import { Movie } from '../services/movie';
 import { catchError, every, finalize, of } from 'rxjs';
-import { ApiResult, MovieResult } from '../services/interfaces';
+import { ApiResult, MovieResult } from '../model/interfaces';
 import { DatePipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
 @Component({
@@ -49,7 +49,7 @@ export class HomePage {
   public isLoading = false;
   public movies: MovieResult[] = [];
   public imageBaseUrl = 'https://image.tmdb.org/t/p';
-  public dummyArray = new Array(5);
+  public skeletonArray = new Array(5);
   constructor() {
     this.loadMovies();
   }

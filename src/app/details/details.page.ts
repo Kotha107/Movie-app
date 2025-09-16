@@ -3,7 +3,7 @@ import { CommonModule, CurrencyPipe, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonItem, IonSkeletonText, IonAvatar, IonAlert, IonLabel, IonBadge, IonInfiniteScroll, IonInfiniteScrollContent, IonCard, IonText, IonCardContent, IonCardHeader, IonCardTitle, IonCardSubtitle,IonIcon } from '@ionic/angular/standalone';
 import { Movie } from '../services/movie';
-import { MovieResult } from '../services/interfaces';
+import { MovieResult } from '../model/interfaces';
 import {cashOutline,calendarOutline,starOutline} from 'ionicons/icons';
 import {addIcons} from 'ionicons';
 import { RouterModule } from '@angular/router';
