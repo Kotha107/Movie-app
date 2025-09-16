@@ -5,8 +5,6 @@ import { environment } from 'src/environments/environment';
 import { ApiResult, MovieResult } from '../model/interfaces';
 import { getMovieDetailsURL, getTopRatedMoviesURL } from './endpoints';
 
-const BASE_URL = 'https://api.themoviedb.org/3';
-const API_KEY= environment.apiKey;
 
 @Injectable({
   providedIn: 'root'
